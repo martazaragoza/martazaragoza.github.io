@@ -18,31 +18,27 @@
             <h1 class="title">Mis Notas</h1>
         </header>
                 
-        <div id="app">
-            <div>
-                <h2>Agregar Nueva Nota</h2>
+        <div class="app">
+            <div class="note-form-container">
+                <h2 class="note-form-title">Agregar Nueva Nota</h2>
                 <form  class="note-form">
-                    <label for="title">Título:</label>
-                    <input type="text" id="title" required>
-                    <label for="content">Contenido:</label>
-                    <textarea id="content" rows="4" required></textarea>
-                    <label for="category" required>Categoría:</label>
-                    <select id="category">
+                    <label for="title" class="form-label">Título:</label>
+                    <input type="text" class="form-input" id="title" required>
+                    <label for="content" class="form-label">Contenido:</label>
+                    <textarea id="content" class="form-input" rows="4" required></textarea>
+                    <label for="category"  class="form-label" required>Categoría:</label>
+                    <select id="category" class="form-input">
                         <!-- Opciones de categoría aquí -->
                         <option value="personal">Personal</option>
                         <option value="work">Trabajo</option>
                         <option value="leisure">Ocio</option>
                     </select>
-                    <button onclick="createNote()">Crear nota</button>
+                    <button class="form-button" onclick="createNote()">Crear nota</button>
                 </form>
             </div>
             <section id="notes" class="notes-section">
-                <h2>Todas tus notas</h2>
+                <h2 class="notes-section-title">Todas tus notas</h2>
                 <div id="notes-container" class="notes-container"></div>  
-            </section>
-            <section id="charts">
-                <h2>Gráficos</h2>
-                <div id="category-chart"></div>
             </section>
         </div>
   </body>

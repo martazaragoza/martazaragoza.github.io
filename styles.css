@@ -2,7 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: floralwhite;
+    display: flex;
+    background-color: snow;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 24px;
 }
 
 header {
@@ -13,17 +17,16 @@ header {
 
     .title {
         font-size: 2em;
-        @media (max-width: 800px) {
+        @media (width: 800px) {
             font-size: 4em;
         }
     }
 }
 
-#app {
-    margin: 0 auto;
+.app {
     padding: 20px;
     background-color: snow;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
 }
 
 .modal {
@@ -40,9 +43,47 @@ header {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.note-form {
+.note-form-container {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .note-form-title {
+        font-size: 2em;
+    }
+}
+
+.note-form {
+    min-width: 200px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .form-label {
+        width: 100%;
+        font-size: 1.4em;
+        padding-top: 8px;
+    }
+
+    .form-input {
+        padding: 8px;
+        font-size: 1.4em;
+        min-width: 200px;
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .form-button {
+        margin-top: 12px;
+        padding: 8px;
+        font-size: 1.4em;
+        width: 120px;
+    }
+
+
 }
 
 .edit-note-form {
@@ -71,7 +112,16 @@ header {
 }
 
 .notes-section {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+
+    .notes-section-title {
+        width: fit-content;
+        font-size: 2em;
+    }
 }
 
 .notes-container {
@@ -79,6 +129,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding-bottom: 24px;
 }
 
 .note {

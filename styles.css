@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: floralwhite;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 14px;
+
+    .title {
+        font-size: 2em;
+        @media (max-width: 800px) {
+            font-size: 4em;
+        }
+    }
+}
+
+#app {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: snow;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.note-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-note-form {
+    display: flex;
+    padding: 14px;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    
+    .edit-label {
+        padding-top: 8px;
+    }
+
+    .edit-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        padding-top: 12px;
+
+        .edit-button {
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+    }
+}
+
+.notes-section {
+    width: 100%;
+}
+
+.notes-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.note {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    height: 200px;
+    width: 200px;
+    margin: 4px;
+    border-radius: 25px;
+    
+    .note-content {
+        max-height: 102px;
+        overflow: scroll;
+    }
+
+    .note-content::-webkit-scrollbar {
+        display: none;
+      }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .category-label {
+            font-size: small;
+        }
+    }
+    
+}
+
+.green {
+    border: 2px solid seagreen;
+    background-color: darkseagreen;
+}
+
+.pink {
+    border: 2px solid rosybrown;
+    background-color: pink;
+}
+
+.blue{
+    border: 2px solid steelblue;
+    background-color: lightsteelblue;
+}
+
+

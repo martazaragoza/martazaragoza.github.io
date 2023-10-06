@@ -1,0 +1,9 @@
+{"notas": {
+    "uuid1": {"title": "A", "content": "contentA", "category": "Personal"},
+    "uuid2": {"title": "B", "content": "contentB", "category": "Work"},
+    "uuid3": {"title": "C", "content": "contentC", "category": "Studies"}
+}
+}
+
+
+["1", "2", "3"]

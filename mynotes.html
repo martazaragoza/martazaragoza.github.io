@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>mynotes</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="logic.js"></script>
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+  </head>
+
+  <body onload="renderNotes()">
+
+    <div id="note-editor" class="modal">
+        Test
+    </div>
+
+        <header>
+            <h1 class="title">Mis Notas</h1>
+        </header>
+                
+        <div id="app">
+            <div>
+                <h2>Agregar Nueva Nota</h2>
+                <form  class="note-form">
+                    <label for="title">Título:</label>
+                    <input type="text" id="title" required>
+                    <label for="content">Contenido:</label>
+                    <textarea id="content" rows="4" required></textarea>
+                    <label for="category" required>Categoría:</label>
+                    <select id="category">
+                        <!-- Opciones de categoría aquí -->
+                        <option value="personal">Personal</option>
+                        <option value="work">Trabajo</option>
+                        <option value="leisure">Ocio</option>
+                    </select>
+                    <button onclick="createNote()">Crear nota</button>
+                </form>
+            </div>
+            <section id="notes" class="notes-section">
+                <h2>Todas tus notas</h2>
+                <div id="notes-container" class="notes-container"></div>  
+            </section>
+            <section id="charts">
+                <h2>Gráficos</h2>
+                <div id="category-chart"></div>
+            </section>
+        </div>
+  </body>

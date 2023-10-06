@@ -2,6 +2,8 @@
 
 Esta aplicación web permite al usuario crear, editar y borrar notas en su dispositivo.
 
+La aplicación está desplegada en GitHub Pages. Puede visitarse [aquí](https://martazaragoza.github.io/).
+
 ## Consideraciones
 1. La aplicación guarda las notas en localStorage del navegador. Podrían implementarse otras soluciones como una base de datos para la persistencia.
 2. Hemos supuesto tres categorías.
